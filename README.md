@@ -15,15 +15,15 @@ Saved articles can be deleted by clicking the "Delete" button.
 Check out the App
 
 # Technologies Used
-Node.js
-Express.js
-Handlebars.js
-MongoDB
-Mongoose
-npm packages
-body-parser
-express
-express-handlebars
-mongoose
-cheerio
-request
+* Node.js
+* Express.js
+* Handlebars.js
+* MongoDB
+* Mongoose
+* npm packages
+* body-parser
+* express
+* express-handlebars
+* mongoose
+* cheerio
+* request
