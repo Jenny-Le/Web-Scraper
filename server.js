@@ -5,10 +5,9 @@ var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 
-// Using es6 js promise
+
 mongoose.Promise = Promise;
 
-// Initialize Express
 var app = express();
 var PORT = process.env.PORT || 8000;
 
@@ -25,8 +24,8 @@ app.set('view engine', 'handlebars');
 app.use(express.static("public"));
 
 // Mongoose (orm) connects to our mongo db and allows us to have access to the MongoDB commands for easy CRUD 
-mongoose.connect("heroku link goes here");
-var db = mongoose.connection;
+// mongoose.connect("heroku link goes here");
+// var db = mongoose.connection;
 
 // if any errors than console errors
 db.on("error", function (error) {
@@ -39,9 +38,9 @@ db.once("open", function () {
 });
 
 // Require the routes in our controllers js file
-require("./controllers/articlesController.js")(app);
+require("./controllers/Articles.js")(app);
 
-//Listen on PORT 8000 & notify us.
-app.listen(3000, function() {
+
+app.listen(8000, function() {
     console.log("App running on port 3000!");
   });
