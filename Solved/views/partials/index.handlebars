@@ -1,0 +1,15 @@
+<center>
+    <button type="button" class="btn btn-primary btn-lg">Click me for awesome articles!</button>
+</center>
+
+
+<script>
+    $(".btn").click(function () {
+        $.ajax({
+            url: "/scrape",
+            success: function() {
+                window.location.href = 'articles'
+            },
+        });
+    });
+</script>
