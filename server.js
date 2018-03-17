@@ -38,7 +38,7 @@ app.use(express.static("public"));
 // By default mongoose uses callbacks for async queries, we're setting it to use promises (.then syntax) instead
 // Connect to the Mongo DB
 mongoose.Promise = Promise;
-mongoose.connect("mongodb://localhost/week18Populater", {
+mongoose.connect("mongodb://lejenny75:password@ds217349.mlab.com:17349/heroku_ljjdx5p1", {
   useMongoClient: true
 });
 
